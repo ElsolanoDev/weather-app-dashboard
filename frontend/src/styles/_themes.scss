@@ -1,0 +1,36 @@
+@use "variables";
+
+// Light Theme
+:root {
+  --bs-body-bg: linear-gradient(
+    to bottom right,
+    #{variables.$background-primary-color},
+    #{variables.$background-secondary-color}
+  );
+  --bs-body-color: #{variables.$text-color};
+  --card-day-bg-color: #{variables.$card-day-bg-color};
+  --card-night-color: #{variables.$card-night-color};
+  --card-night-bg-color: #{variables.$card-night-bg-color};
+  --main-bg-color: #{variables.$main-bg-color};
+  --switch-bg: #{variables.$form-switch-bg};
+  --switch-border: #{variables.$form-switch-border-color};
+  --switch-thumb: #{variables.$form-switch-color};
+  --switch-checked-bg: #{variables.$form-switch-checked-bg};
+  --switch-checked-thumb: #{variables.$form-switch-checked-color};
+  --form-check-input-focus-box-shadow: #{variables.$form-check-input-focus-box-shadow};
+  --btn-color: #{variables.$btn-color};
+}
+
+// Dark Theme
+[data-theme="dark"] {
+  --bs-body-bg: linear-gradient(
+    to bottom right,
+    #{variables.$dark-background-primary-color},
+    #{variables.$dark-background-secondary-color}
+  );
+  --bs-body-color: #{variables.$dark-text-color};
+  --card-day-bg-color: #{variables.$dark-card-day-bg-color};
+  --card-night-color: #{variables.$dark-card-night-color};
+  --card-night-bg-color: #{variables.$dark-card-night-bg-color};
+  --main-bg-color: #{variables.$dark-main-bg-color};
+}

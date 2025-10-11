@@ -1,0 +1,109 @@
+@use "themes.scss";
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-check-label {
+  font-weight: bold;
+}
+
+.text-body {
+  color: var(--bs-body-color);
+}
+
+.card {
+  margin-bottom: 2rem;
+  border: none;
+  &.main-card {
+    background-color: var(--main-bg-color);
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 1);
+  }
+  .card-title {
+    font-weight: bold;
+  }
+
+  .card-middle-text {
+    font-weight: bold;
+    font-size: 4rem;
+  }
+
+  .card-forecast {
+    border-radius: 0.5rem;
+    &.day {
+      background-color: var(--card-day-bg-color);
+    }
+    &.night {
+      background-color: var(--card-night-bg-color);
+      color: var(--card-night-color);
+    }
+  }
+}
+
+// Switch styles
+.form-switch {
+  .form-check-input {
+    background-color: var(--switch-bg);
+    border-color: var(--switch-border-color);
+    box-shadow: var(--form-check-input-focus-box-shadow);
+  }
+
+  .form-check-input:checked {
+    background-color: var(--switch-checked-bg);
+  }
+  .form-check-input::before {
+    background-color: var(--switch-checked-bg);
+  }
+}
+
+.input-group {
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 1);
+  background-color: var(--main-bg-color);
+}
+
+.btn-primary {
+  background-color: var(--btn-color);
+  border: none;
+  &:hover {
+    background-color: color-mix(in srgb, var(--btn-color), black 10%);
+  }
+}
+
+.card-fancy-text {
+  display: inline-block; /* or block if needed */
+  font-weight: bold;
+
+  /* Gradient that goes from solid to transparent */
+  background: linear-gradient(
+    to right,
+    var(--bs-body-color) 70%,
+    transparent 100%
+  );
+
+  /* Apply gradient to text */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &.big {
+    font-size: 3rem;
+  }
+  &.small {
+    font-size: 1.5rem;
+  }
+}
+
+.footer {
+  background-color: var(--main-bg-color);
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  div {
+    color: var(--bs-body-color);
+  }
+  a {
+    color: var(--bs-body-color);
+  }
+}

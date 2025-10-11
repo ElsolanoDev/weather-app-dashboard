@@ -1,0 +1,28 @@
+// Default variables (Light Theme)
+$background-primary-color: #ffffff; //Background gradient start
+$background-secondary-color: #466173; //Background gradient end
+$text-color: #222222; //Text color
+$card-day-bg-color: #f88508; //Card background color for day (only for forecast cards)
+$card-night-bg-color: #292929; //Card background color for night (only for forecast cards)
+$card-night-color: #ffffff; //Text color for night forecast cards
+$main-bg-color: #d9d9d9; //Main background color for components
+
+// Dark theme overrides
+$dark-background-primary-color: #7d7d7d; //Background gradient start
+$dark-background-secondary-color: #383838; //Background gradient end
+$dark-text-color: #e0e0e0; //Text color
+$dark-card-day-bg-color: #373636; //Card background color for day (only for forecast cards)
+$dark-card-night-color: #e0e0e0; //Text color for night forecast cards
+$dark-card-night-bg-color: #373636; //Card background color for night (only for forecast cards)
+$dark-main-bg-color: #444444; //Main background color for components
+
+// Dont change with theme
+// Switch base colors
+$form-switch-bg: #d9d9d9; // background of the switch (track)
+$form-switch-border-color: none; // border color of the track
+$form-switch-color: #000; // color of the thumb (dot)
+$form-switch-checked-bg: #d9d9d9; // background when checked
+$form-switch-checked-color: #000; // thumb color when checked
+$form-check-input-focus-box-shadow: none; // remove default focus shadow
+//button
+$btn-color: #4cbb17; //button background color
