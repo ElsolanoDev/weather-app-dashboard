@@ -2,7 +2,11 @@
 
 A modern weather dashboard built with **React + TypeScript** for the frontend and **ASP.NET Core 8 Web API** for the backend. This application provides real-time weather updates, including current conditions, hourly forecasts, and past weather data, utilizing the **WeatherAPI.com** service.
 
------------------------------------------------
+---
+
+[![Watch the demo](https://img.youtube.com/vi/grsXzrASXcQ/0.jpg)](https://www.youtube.com/watch?v=grsXzrASXcQ)
+
+---
 
 ## Features
 
@@ -13,7 +17,7 @@ A modern weather dashboard built with **React + TypeScript** for the frontend an
 - **Dark/light theme toggle**
 - **Current location detection** via browser geolocation
 
------------------------------------------------
+---
 
 ## Tech Stack
 
@@ -29,7 +33,7 @@ A modern weather dashboard built with **React + TypeScript** for the frontend an
 - C# DTO models
 - Integration with WeatherAPI.com
 
------------------------------------------------
+---
 
 ## Project Structure
 
@@ -56,7 +60,8 @@ A modern weather dashboard built with **React + TypeScript** for the frontend an
 └── README.md
 ```
 
------------------------------------------------
+---
+
 ## Setup & Run
 
 ### Backend
@@ -66,12 +71,12 @@ A modern weather dashboard built with **React + TypeScript** for the frontend an
    ```bash
    cd backend
    ```
-   
+
 2. Open the appSettings.json file and change **"<your-api-key>"** with an actual api key from **WeatherAPI.com** that you own.
 3. Run the application:
-   
-  ```bash
-  dotnet run
+
+```bash
+dotnet run
 ```
 
 4. The application should run in **https://localhost:7269** or **http://localhost:5162**. You can change the ports by modifiying the **Properties\launchSettings.json** file.
@@ -97,11 +102,12 @@ npm install
 ```bash
 npm run dev
 ```
+
 The frontend will be accessible at **http://localhost:3000**.
 
------------------------------------------------
+---
 
-## Credits ##
+## Credits
 
 **Design**: Adapted from <a href="https://www.figma.com/design/LADJXj2ShIBYIJCto11lFm/Weather-Dashboard--Community-" target="_blank">Weather Dashboard UI – Figma Community</a>
 
@@ -109,15 +115,15 @@ The frontend will be accessible at **http://localhost:3000**.
 
 **Icons**: Solar Icon Set
 
------------------------------------------------
+---
 
-## License ##
+## License
 
 This project is licensed under the MIT License — see the <a href="./LICENSE" target="_blank">LICENSE</a> file for details.
 
------------------------------------------------
+---
 
-## Contact ##
+## Contact
 
 Created by Elias Solano
 

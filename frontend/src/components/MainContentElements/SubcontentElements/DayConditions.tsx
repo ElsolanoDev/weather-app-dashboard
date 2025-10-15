@@ -14,25 +14,25 @@ function DayConditions() {
       <div className="row">
         <div className="col">
           <WaterBoldDuotone size={32} color="#9fcfe6" />
-          <div>{weather?.humidity}%</div>
-          <div>Humidity</div>
+          <div className="card-text">{weather?.humidity}%</div>
+          <div className="card-text">Humidity</div>
         </div>
         <div className="col">
           <WindBoldDuotone size={32} color="#9fcfe6" />
-          <div>{weather?.windKph} mph</div>
-          <div>Wind Speed</div>
+          <div className="card-text">{weather?.windKph} mph</div>
+          <div className="card-text">Wind Speed</div>
         </div>
       </div>
       <div className="row">
         <div className="col">
           <SpedometerMiddleBoldDuotone size={32} color="#9fcfe6" />
-          <div>{weather?.pressure} mb</div>
-          <div>Pressure</div>
+          <div className="card-text">{weather?.pressure} mb</div>
+          <div className="card-text">Pressure</div>
         </div>
         <div className="col">
           <StarBoldDuotone size={32} color="#9fcfe6" />
-          <div>{weather?.uv}</div>
-          <div>UV</div>
+          <div className="card-text">{weather?.uv}</div>
+          <div className="card-text">UV</div>
         </div>
       </div>
     </>

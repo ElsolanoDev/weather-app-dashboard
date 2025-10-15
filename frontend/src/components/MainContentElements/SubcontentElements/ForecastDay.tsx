@@ -13,7 +13,7 @@ function ForecastDay({ day, temperature, icon: Icon }: DayForecastProps) {
           <p className="card-text">{temperature}</p>
         </div>
         <div className="col">
-          <h5 className="card-text">{day}</h5>
+          <p className="card-text fs-5">{day}</p>
         </div>
       </div>
     </>

@@ -75,6 +75,10 @@ body {
   }
 }
 
+.card-text {
+  font-weight: bold;
+}
+
 .card-fancy-text {
   display: inline-block; /* or block if needed */
   font-weight: bold;
@@ -89,12 +93,6 @@ body {
   /* Apply gradient to text */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  &.big {
-    font-size: 3rem;
-  }
-  &.small {
-    font-size: 1.5rem;
-  }
 }
 
 .footer {

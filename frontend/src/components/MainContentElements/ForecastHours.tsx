@@ -26,18 +26,22 @@ function ForecastHours() {
                 <ForecastHour
                   hour={hour.time}
                   weatherIcon={
-                    hour.conditionText.includes("rain") ? (
+                    hour.conditionText.toLocaleLowerCase().includes("rain") ? (
                       <CloudRainBoldDuotone size={48} color="#9fcfe6" />
-                    ) : hour.conditionText.includes("snow") ? (
+                    ) : hour.conditionText
+                        .toLocaleLowerCase()
+                        .includes("snow") ? (
                       <CloudSnowfallBoldDuotone size={48} color="#9fcfe6" />
-                    ) : hour.conditionText.includes("drizzle") ? (
+                    ) : hour.conditionText
+                        .toLocaleLowerCase()
+                        .includes("drizzle") ? (
                       <FogBoldDuotone size={48} color="#9fcfe6" />
                     ) : (
-                      <Sun2BoldDuotone size={48} color="#9fcfe6" />
+                      <Sun2BoldDuotone size={48} color="#f9d74e" />
                     )
                   }
                   temperature={hour.tempC + "°C"}
-                  windIcon={<WindBoldDuotone size={16} color="#9fcfe6" />}
+                  windIcon={<WindBoldDuotone size={48} color="#9fcfe6" />}
                   windSpeed="15 km/h"
                   isDaytime={hour.isDay}
                 />

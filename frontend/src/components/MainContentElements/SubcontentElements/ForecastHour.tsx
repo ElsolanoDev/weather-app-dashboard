@@ -18,11 +18,11 @@ function ForecastHour({
   return (
     <div className="card">
       <div className={isDaytime ? "card-forecast day" : "card-forecast night"}>
-        <div className="card-text">{hour}</div>
+        <div className="card-text mb-2">{hour}</div>
         {WeatherIcon}
-        <div className="card-text">{temperature}</div>
+        <div className="card-text mt-2 mb-2">{temperature}</div>
         {WindIcon}
-        <div className="card-text">{windSpeed}</div>
+        <div className="card-text mt-2 mb-2">{windSpeed}</div>
       </div>
     </div>
   );

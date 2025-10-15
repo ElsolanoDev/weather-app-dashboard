@@ -8,10 +8,11 @@ import {
 } from "solar-icon-set";
 
 import { useWeather } from "../../context/WeatherContext";
+import { useTheme } from "../../context/ThemeContext";
 
 function ForecastDays() {
   const { weather } = useWeather();
-
+  const { darkMode } = useTheme();
   return (
     <>
       <div className="card main-card flex-fill">
@@ -25,12 +26,16 @@ function ForecastDays() {
               icon={
                 /*day.conditionIcon*/ day.conditionText.includes("rain") ? (
                   <CloudRainBoldDuotone size={48} color="#9fcfe6" />
-                ) : day.conditionText.includes("snow") ||
-                  day.conditionText.includes("blizzard") ? (
+                ) : day.conditionText.toLocaleLowerCase().includes("snow") ||
+                  day.conditionText.toLocaleLowerCase().includes("blizzard") ? (
                   <CloudSnowfallBoldDuotone size={48} color="#9fcfe6" />
-                ) : day.conditionText.includes("sun") ? (
-                  <Sun2BoldDuotone size={48} color="#9fcfe6" />
-                ) : day.conditionText.includes("storm") ? (
+                ) : day.conditionText.toLocaleLowerCase().includes("sun") ||
+                  day.conditionText.toLocaleLowerCase().includes("clear") ? (
+                  <Sun2BoldDuotone
+                    size={48}
+                    color={darkMode ? "#f9d74e" : "#d2a93875"}
+                  />
+                ) : day.conditionText.toLocaleLowerCase().includes("storm") ? (
                   <CloudBoltBoldDuotone size={48} color="#9fcfe6" />
                 ) : (
                   <FogBoldDuotone size={48} color="#9fcfe6" />

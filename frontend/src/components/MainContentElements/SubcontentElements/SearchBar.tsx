@@ -9,6 +9,7 @@ function SearchBar() {
     e.preventDefault();
     if (!query) return;
     console.log("Searching for:", query);
+    setQuery("");
     refreshWeather(query);
   };
   return (
